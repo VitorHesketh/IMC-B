@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultadoActivity"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="@color/colorPrimaryDark"
+        app:contentPadding="20px"
+
+        app:cardCornerRadius="15dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/text_view_texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Seu indice de massa corporal é"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/text_view_resultatoNUmero"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/aval_backgrond"
+                android:paddingTop="24sp"
+                android:text="25.0"
+                android:textAlignment="center"
+                android:textSize="24sp"
+
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imagem_resultado_icm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ideal"
+                android:textAlignment="center"
+
+                />
+
+            <TextView
+                android:id="@+id/status_imc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="nomal"
+                android:textAlignment="center"
+                android:textSize="32dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/risco_imc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="nivel de risco"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/risco_imc_resulttado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="risco medio"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="16dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dica_imc"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            >
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

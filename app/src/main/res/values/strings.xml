@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Calculadora IMC</string>
+    <string name="dica_imc">o processo utilizado para determinar o exesso de pesso foi</string>
+</resources>
